@@ -1,33 +1,35 @@
 h1. PopWindow
+
 Most easy way to use divs or other element as tooltip style windows withou modal, popups or lightbox
 
 h3. Usage
+
 Javascript
 <pre>
 	<code>
-		&lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;
-		&lt;script src=&quot;jquery.popwindow.js&quot;&gt;&lt;/script&gt;
-		&lt;script src=&quot;jquery.bgiframe.js&quot;&gt;&lt;/script&gt;		
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="jquery.popwindow.js"></script>
+		<script src="jquery.bgiframe.js"></script>		
 
-		&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+		<script language="javascript" type="text/javascript">
 
 			$(document).ready(function(){
 		  	$("#show").popwindow("#popup_div1");
 		  });
    
-		&lt;/script&gt;
+		</script>
 	</code>
 </pre>
 
 XHTML
 <pre>
 	<code>
-		&lt;input type=&quot;button&quot; id=&quot;show&quot; value=&quot;Show Message in Bottom&quot;/&gt;
-		&lt;div id=&quot;popup_div1&quot; class=&quot;popup_msg&quot;&gt;
-		Popup Message&lt;br /&gt; 
-		Message goes here &lt;br /&gt; 
+		<input type="button" id="show" value="Show Message in Bottom"/>
+		<div id="popup_div1" class="popup_msg">
+		Popup Message<br /> 
+		Message goes here <br /> 
 		Message goes here
-		&lt;/div&gt;
+		</div>
 	</code>
 </pre>
 
