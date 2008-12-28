@@ -41,35 +41,9 @@ CSS
 </pre>
 
 h3. Possible Params
-<table border="1px" cellpadding="5">
-	<thead>
-		<tr>
-			<th>Param</th>
-			<th>Values</th>			
-			<th>Desc</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>position</td>
-			<td>"bottom","right","top","left"</td>			
-			<td>display hidden element in passed position</td>
-		</tr>
-		<tr>
-			<td>offsetTop</td>
-			<td>Any number value (default is 10)</td>			
-			<td>offset for top</td>
-		</tr>		
-		<tr>
-			<td>offsetSides</td>
-			<td>Any number value (default is 0)</td>			
-			<td>offset for sides</td>
-		</tr>
-		<tr>
-			<td>transitionSpeed</td>
-			<td>"fast","slow" (default is "fast")</td>			
-			<td>speed of fade effect</td>
-		</tr>
-				
-	</tbody>
-</table>	
+
+* position => "bottom","right","top","left"
+* offsetTop => Any number value (default is 10)
+* offsetSides => Any number value (default is 0)
+* transitionSpeed => "fast","slow" (default is "fast")
+
