@@ -1,0 +1,75 @@
+<h1>PopWindow</h1>
+<p>Most easy way to use divs or other element as tooltip style windows withou modal, popups or lightbox</p>
+
+<hr/>
+<h3>Usage</h3>
+<p>Javascript</p>
+<pre>
+	<code>
+		&lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;jquery.popwindow.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;jquery.bgiframe.js&quot;&gt;&lt;/script&gt;		
+
+		&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+
+			$(document).ready(function(){
+		  	$("#show").popwindow("#popup_div1");
+		  });
+   
+		&lt;/script&gt;
+	</code>
+</pre>
+
+<p>XHTML</p>
+<pre>
+	<code>
+		&lt;input type=&quot;button&quot; id=&quot;show&quot; value=&quot;Show Message in Bottom&quot;/&gt;
+		&lt;div id=&quot;popup_div1&quot; class=&quot;popup_msg&quot;&gt;
+		Popup Message&lt;br /&gt; 
+		Message goes here &lt;br /&gt; 
+		Message goes here
+		&lt;/div&gt;
+	</code>
+</pre>
+
+<p>CSS</p>
+<pre>
+	<code>
+		.popup_msg{ display:none; }
+	</code>
+</pre>
+
+<hr/>
+<h3>Possible Params</h3>
+<table border="1px" cellpadding="5">
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Values</th>			
+			<th>Desc</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>position</td>
+			<td>"bottom","right","top","left"</td>			
+			<td>display hidden element in passed position</td>
+		</tr>
+		<tr>
+			<td>offsetTop</td>
+			<td>Any number value (default is 10)</td>			
+			<td>offset for top</td>
+		</tr>		
+		<tr>
+			<td>offsetSides</td>
+			<td>Any number value (default is 0)</td>			
+			<td>offset for sides</td>
+		</tr>
+		<tr>
+			<td>transitionSpeed</td>
+			<td>"fast","slow" (default is "fast")</td>			
+			<td>speed of fade effect</td>
+		</tr>
+				
+	</tbody>
+</table>	

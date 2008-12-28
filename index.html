@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Example of popup message on mouse clicked position using jQuery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="jquery.popwindow.js"></script>
+<script src="jquery.bgiframe.js"></script>
+<script language="javascript" type="text/javascript">
+
+	$(document).ready(function(){
+  	$("#show").popwindow("#popup_div1");
+  	$("#show2").popwindow("#popup_div2", { offsetTop:20, offsetSides:20});
+  	$("#show3").popwindow("#popup_div3", { position:"top" });
+  	$("#show4").popwindow("#popup_div4", { position:"left", offsetTop:0, offsetSides:20 });
+  	$("#show5").popwindow("#popup_div5", { position:"right", offsetTop:0, offsetSides:20 });
+  });
+   
+</script>
+
+<style type="text/css">
+.popup_msg{ padding:10px; height:100px; display:none; background:#ccc; }
+</style>
+</head>
+
+<body >
+	
+<h1>PopWindow</h1>
+<p>Most easy way to use divs or other element as tooltip style windows withou modal, popups or lightbox</p>
+
+<hr/>
+<h3>Examples</h3>
+
+<input type="button" id="show" value="Show Message in Bottom"/>
+<div id="popup_div1" class="popup_msg">
+Popup Message<br /> 
+Message goes here <br /> 
+Message goes here
+</div> 
+
+<input type="button" id="show2" value="Show Message in Bottom with offset"/>
+<div id="popup_div2" class="popup_msg">
+Popup Message<br /> 
+Message goes here <br /> 
+Message goes here
+</div>
+
+<input type="button" id="show3" value="Show Message on top"/>
+<div id="popup_div3" class="popup_msg">
+Popup Message<br /> 
+Message goes here <br /> 
+Message goes here
+</div>
+
+<input type="button" id="show4" value="Show Message on left with offset"/>
+<div id="popup_div4" class="popup_msg">
+Popup Message<br /> 
+Message goes here <br /> 
+Message goes here
+</div>
+
+<input type="button" id="show5" value="Show Message on right with offset"/>
+<div id="popup_div5" class="popup_msg">
+Popup Message<br /> 
+Message goes here <br /> 
+Message goes here
+</div>
+
+<hr/>
+<h3>Usage</h3>
+<p>Javascript</p>
+<pre>
+	<code>
+		&lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;jquery.popwindow.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;jquery.bgiframe.js&quot;&gt;&lt;/script&gt;		
+
+		&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+
+			$(document).ready(function(){
+		  	$("#show").popwindow("#popup_div1");
+		  });
+   
+		&lt;/script&gt;
+	</code>
+</pre>
+
+<p>XHTML</p>
+<pre>
+	<code>
+		&lt;input type=&quot;button&quot; id=&quot;show&quot; value=&quot;Show Message in Bottom&quot;/&gt;
+		&lt;div id=&quot;popup_div1&quot; class=&quot;popup_msg&quot;&gt;
+		Popup Message&lt;br /&gt; 
+		Message goes here &lt;br /&gt; 
+		Message goes here
+		&lt;/div&gt;
+	</code>
+</pre>
+
+<p>CSS</p>
+<pre>
+	<code>
+		.popup_msg{ display:none; }
+	</code>
+</pre>
+
+<hr/>
+<h3>Possible Params</h3>
+<table border="1px" cellpadding="5">
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Values</th>			
+			<th>Desc</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>position</td>
+			<td>"bottom","right","top","left"</td>			
+			<td>display hidden element in passed position</td>
+		</tr>
+		<tr>
+			<td>offsetTop</td>
+			<td>Any number value (default is 10)</td>			
+			<td>offset for top</td>
+		</tr>		
+		<tr>
+			<td>offsetSides</td>
+			<td>Any number value (default is 0)</td>			
+			<td>offset for sides</td>
+		</tr>
+		<tr>
+			<td>transitionSpeed</td>
+			<td>"fast","slow" (default is "fast")</td>			
+			<td>speed of fade effect</td>
+		</tr>
+				
+	</tbody>
+</table>	
+
+</body>
+</html>
+
+
+
+
+
