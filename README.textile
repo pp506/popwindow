@@ -1,9 +1,8 @@
-<h1>PopWindow</h1>
-<p>Most easy way to use divs or other element as tooltip style windows withou modal, popups or lightbox</p>
+h1. PopWindow
+Most easy way to use divs or other element as tooltip style windows withou modal, popups or lightbox
 
-<hr/>
-<h3>Usage</h3>
-<p>Javascript</p>
+h3. Usage
+Javascript
 <pre>
 	<code>
 		&lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;
@@ -20,7 +19,7 @@
 	</code>
 </pre>
 
-<p>XHTML</p>
+XHTML
 <pre>
 	<code>
 		&lt;input type=&quot;button&quot; id=&quot;show&quot; value=&quot;Show Message in Bottom&quot;/&gt;
@@ -32,15 +31,14 @@
 	</code>
 </pre>
 
-<p>CSS</p>
+CSS
 <pre>
 	<code>
 		.popup_msg{ display:none; }
 	</code>
 </pre>
 
-<hr/>
-<h3>Possible Params</h3>
+h3. Possible Params
 <table border="1px" cellpadding="5">
 	<thead>
 		<tr>
